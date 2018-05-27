@@ -1569,7 +1569,7 @@ def setup_comments(document):
     add_content_override(document,  '/word/comments.xml',
                             'application/vnd.openxmlformats-officedocument'
                             '.wordprocessingml.comments+xml')
-    helper_functions.add_relationship(document, 'comments.xml', 'http://schemas.'
+    add_relationship(document, 'comments.xml', 'http://schemas.'
     'openxmlformats.org/officeDocument/2006/relationships/comments')
     return next_id
 
